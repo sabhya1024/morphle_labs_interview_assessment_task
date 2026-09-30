@@ -1,0 +1,32 @@
+1 stage area
+
+narrow connecting
+
+1 stall area
+
+divided venue into checkpoints... 
+at each checkpoints. --> volunteers.. 
+and for each set of checkpoints i had one area manager
+
+CP -- 2 volunteers. -- > both are busy.
+3rd problem. 
+
+DYNAMIC BACKUP ALGORITHM using BFS. expand latrally to find closed buffer volunteer.
+buffer volunteers
+
+path -->  1/2 stage to stall
+1/2 stall stage
+ HAMILON largest remainder algorithm . -- balanced sharing of bandwidth.
+
+  dynamic pipeline to solve the wasted infrastructure problem.
+  30 % -- stage to stall..  but stall full.
+  100 % -- stall to stage. 
+volunteer burnout. picking the same guy over & over is bad. implemented round-robin deque so they go to the back of the line when done.
+
+silent gate failures. if 100 people show up and gate throughput is 10, they just wait outside invisibly. built an auto-trigger for "gate jams" so the system alerts the manager when queue > throughput.
+
+incident sorting. fire is obviously worse than food shortage. added strict priority mapping so lead desk dispatches based on severity first, then timestamp.
+
+crowd blobs vs individuals. didn't want the crowd acting like one massive blob. gave them individual ptypes (parents, performers). performers hard-route to stage, others roll 50/50 for random stalls.
+
+teleportation glitch. people were jumping from gate straight to stalls. added a strict next_hop tracker so they physically have to queue at the path first before entering target zone.
